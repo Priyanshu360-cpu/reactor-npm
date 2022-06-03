@@ -27,7 +27,10 @@ export class Clock extends Component {
 
   }
   render(){return (
-    <div>{this.state.hour+":"+this.state.minute+":"+this.state.seconds}
+    <div>{(parseInt(this.state.hour)<10?"0"+this.state.hour:this.state.hour)
+    +":"+(parseInt(this.state.minute)<10?"0"
+    +this.state.minute:this.state.minute)+":"
+    +(parseInt(this.state.seconds)<10?"0"+this.state.seconds:this.state.seconds)}
    <this.clock/> 
    </div>
   )}
