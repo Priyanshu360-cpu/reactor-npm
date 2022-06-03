@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Component } from 'react';
 
-class Clock extends Component {
+export class Clock extends Component {
   constructor() {
     super();
     this.state = {
@@ -32,4 +32,4 @@ class Clock extends Component {
    </div>
   )}
 }
-export default Clock;
+
