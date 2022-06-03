@@ -6,7 +6,7 @@ class App extends Component {
   
   
   render(){return (
-   <><div className="trial"><Clock></Clock></div><Test></Test></>
+   <><Clock></Clock><Test></Test></>
   )}
 }
 export default App;
