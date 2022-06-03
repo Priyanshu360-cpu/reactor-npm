@@ -11,12 +11,13 @@ class App extends Component {
     this.clock=this.clock.bind(this);
   }
   clock(handler){
-setInterval(()=>{this.setState({seconds:(parseInt(this.state.seconds)+1).toString})},1000);
+    setInterval(()=>{this.setState({seconds:(parseInt(this.state.seconds)+1).toString()})},1000);
+
   }
   render(){return (
-    <h1>{this.state.seconds}
+    <div>{this.state.seconds}
    <this.clock/> 
-   </h1>
+   </div>
   )}
 }
 export default App;
