@@ -17,10 +17,10 @@ class Clock extends Component {
         if(this.state.stopper==0){
     setInterval(()=>{if(parseInt(this.state.minute)>=60){
       this.setState({minute:"0",hour:(parseInt(this.state.hour)+1).toString()})
-    }
+    }else
     if(parseInt(this.state.seconds)>=60){
       this.setState({seconds:"0",minute:(parseInt(this.state.minute)+1).toString()})
-    }
+    }else
       this.setState({seconds:(parseInt(this.state.seconds)+1).toString()})},1000);
         }
         this.setState({stopper:1});
