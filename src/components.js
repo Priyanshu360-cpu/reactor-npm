@@ -38,3 +38,4 @@ export class Test extends Component{
     )
     }
 }
+export default Clock;
